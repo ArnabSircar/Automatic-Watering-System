@@ -1,0 +1,14 @@
+int soilPin=A0,soilVal;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(soilPin,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  soilVal=analogRead(soilPin);
+  Serial.println(soilVal);
+  delay(500);
+}
